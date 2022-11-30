@@ -15,8 +15,6 @@ function btnEsquerda() {
     })
 }
 
-
-
 function btnDireita() {
     let exibido = document.querySelector(".exibir")
     let x = 0
