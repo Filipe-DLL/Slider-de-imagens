@@ -59,18 +59,21 @@ section .lista .conteudo a {
 section .lista .conteudo a.color1 {
     color: #C50000;
 }
+
 section .lista .conteudo a.color2 {
     color: #D9DD10;
 }
+
 section .lista .conteudo a.color3 {
     color: #A63A17;
 }
+
 section .lista .conteudo a.color4 {
     color: #10ACDD;
 }
 
-section .lista li img {
-    height: 108rem;
+section ul li img.img {
+    height: 100%;
 }
 
 section .lista .item .seta {
