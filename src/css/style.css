@@ -11,131 +11,117 @@ body {
 
     min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-section .lista .item {
-    position: relative;
+.lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista .item {
     display: none;
+    position: relative;
+    background: center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
 
-section .lista .item.exibir {
-    display: block;
+.lista .item.exibir {
+    display: flex;
+    align-items: center;
 }
 
-section .lista .conteudo {
-    position: absolute;
-    width: 32.2%;
-    height: 64.8%;
+.lista .item.imagem1 {
+    background-image: url(../img/imagem1.png);
+}
+
+.lista .item.imagem2 {
+    background-image: url(../img/imagem2.png);
+}
+
+.lista .item.imagem3 {
+    background-image: url(../img/imagem3.png);
+}
+
+.lista .item.imagem4 {
+    background-image: url(../img/imagem4.png);
+}
+
+.lista .item .conteudo {
     background-color: #fff;
     color: #000;
-    left: 9.3%;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 1rem;
-    padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    gap: 5rem;
+    width: 62rem;
+    padding: 6rem 6.5rem;
+    margin-left: 18rem;
+    border-radius: 2rem;
 }
 
-section .lista .conteudo h1 {
+.lista .item .conteudo h1 {
     font-size: 5rem;
     font-weight: 400;
 }
 
-section .lista .conteudo p {
+.lista .item .conteudo p {
     font-size: 2.5rem;
     font-weight: 300;
 }
 
-section .lista .conteudo a {
+.lista .item .conteudo a {
     font-size: 3rem;
     font-weight: 700;
     cursor: pointer;
 }
 
-section .lista .conteudo a.color1 {
+.lista .item .conteudo a.color1 {
     color: #C50000;
 }
 
-section .lista .conteudo a.color2 {
+.lista .item .conteudo a.color2 {
     color: #D9DD10;
 }
 
-section .lista .conteudo a.color3 {
+.lista .item .conteudo a.color3 {
     color: #A63A17;
 }
 
-section .lista .conteudo a.color4 {
+.lista .item .conteudo a.color4 {
     color: #10ACDD;
 }
 
-section ul li img.img {
-    max-width: 99vw;
-    max-height: 100vh;
-}
-
-section .lista .item .seta {
+.lista .item .seta {
+    transform: scale(1.0);
     position: absolute;
-    width: 4.9rem;
-    height: 7.8rem;
-    top: 47%;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
-section .lista .item .seta:hover {
+.lista .item .seta.seta-esquerda {
+    left: 7.7rem;
+}
+
+.lista .item .seta.seta-direita {
+    right: 7.7rem;
+}
+
+.lista .item .seta:hover {
     transform: scale(1.1);
     filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
 }
 
-section .lista .item .seta.opacity {
-    opacity: 25%;
+.lista .item .seta.opacity {
+    opacity: 35%;
+    transform: scale(1.0);
     cursor: auto;
 }
 
-section .lista .item .seta.opacity:hover {
+.lista .item .seta.opacity:hover {
     transform: scale(1.0);
     filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, .0));
-}
-
-section .lista .item .seta.seta-esquerda {
-    left: 7.7rem;
-}
-
-section .lista .item .seta.seta-direita {
-    right: 7.7rem;
-}
-
-@media (max-width:992px) {
-    section .lista .conteudo {
-        padding: 2rem;
-    }
-
-    section .lista .conteudo h1 {
-        font-size: 2.5rem;
-    }
-    
-    section .lista .conteudo p {
-        font-size: 1.1rem;
-    }
-    
-    section .lista .conteudo a {
-        font-size: 1rem;
-    }
-    section .lista .item .seta {
-        width: 4.9vw;
-        height: 7.8vh;
-        top: 42%;
-    }
-    section .lista .item .seta.seta-esquerda {
-        left: 1.8rem;
-    }
-    
-    section .lista .item .seta.seta-direita {
-        right: 1.8rem;
-    }
 }
